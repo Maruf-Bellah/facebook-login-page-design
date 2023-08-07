@@ -1,0 +1,120 @@
+body{
+    margin: 0px;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    background-color: #3F5CA0;
+    gap:10px;
+    padding: 10px;
+}
+
+.nav-menu-left-side img{
+    width: 50%;
+}
+
+.nav-menu-right-side{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    color: whitesmoke;
+    font-family:  inter;
+    font-size: 12px;
+}
+
+/* =================================================================== */
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    font-family: inter;
+    background-color: #E1EEFF;
+    padding-top: 70px;
+    height: 83vh;
+    
+}
+
+.section-left{
+    width: 100%;
+    padding: 30px;
+}
+.section-left img{
+    width: 100%;
+    height: auto;
+    /* height: 50%; */
+}
+.section-right{
+    width: 100%;
+    
+  
+}
+.up-input{
+    width: 90%;
+}
+.up-inputs{
+    width: 45%;
+    padding: 8px;
+}
+.down-input{
+    width: 85%;
+   
+}
+.inputs{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 8px;
+}
+
+.sign-up{
+    border: none;
+    padding: 10px 30px;
+    background-color: #5D944B;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.line{
+    padding-right: 20px;
+}
+@media screen and (max-width: 600px){
+.nav-menu{
+    grid-template-columns: repeat(1, 1fr);
+}
+.nav-menu-left-side{
+    width: 100%;
+    overflow-x: hidden;
+}
+.nav-menu-right-side{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.nav-menu-right-side input{
+    padding: 7px;
+    width: 100%;
+}
+
+.section{
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
+}
+.section-left{
+    width: 100%;
+}
+.up-inputs{
+    width: 95%;
+    margin: 5px 0px;
+    padding: 8px;
+}
+.section-right{
+    /* overflow-x: hidden; */
+      padding: 10px;
+}
+
+}
